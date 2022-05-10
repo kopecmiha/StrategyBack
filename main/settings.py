@@ -81,11 +81,11 @@ WSGI_APPLICATION = 'main.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASE_NAME = getenv("DATABASE_NAME", "postgres_auth")
+DATABASE_NAME = getenv("DATABASE_NAME", "postgres")
 DATABASE_HOST = getenv("DATABASE_HOST", "localhost")
 DATABASE_PORT = getenv("DATABASE_PORT", 5432)
-DATABASE_USER = getenv("DATABASE_USER", "postgres_auth")
-DATABASE_PASSWORD = getenv("DATABASE_PASSWORD", "postgres_auth")
+DATABASE_USER = getenv("DATABASE_USER", "postgres")
+DATABASE_PASSWORD = getenv("DATABASE_PASSWORD", "postgres")
 
 DATABASES = {
         "default": {
